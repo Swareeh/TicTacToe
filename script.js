@@ -225,17 +225,33 @@ function Ref() {
     }
 }
 
-//FIXME: Yeah this wont work, (WebPage is not even loading!)
-// while (gameOver == false) {
-//     console.log('Loop activiated!')
-//     PlayerX()
-//     Ref()
-//     if (gameOver == true){
-//         break
-//     }
-//     PlayerO()
-//     Ref()
-//     if (gameOver == true){
-//         break
-//     }
-// }
+//FIXME: No idea how this is kinda working
+//FIXME: Multiple Eventlistners are firing at the same time. (Check console)
+//FIXME: I think rewrting the entire script from scratch is easier than trying to fix this.
+
+function gameLoop() {
+    var currentPlayer = 'X'
+    if (gameOver == true){
+        return
+    }
+
+    if(currentPlayer == 'X') {
+        PlayerX()
+        Ref()
+        if (!gameOver) {
+            currentPlayer = 'O'
+        }
+    }
+    
+    if(currentPlayer == 'O') {
+        PlayerO()
+        Ref()
+        if (!gameOver) {
+            currentPlayer = 'X'
+        }
+    }
+
+    requestAnimationFrame(gameLoop);
+}
+
+requestAnimationFrame(gameLoop);
