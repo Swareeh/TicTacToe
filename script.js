@@ -226,16 +226,16 @@ function Ref() {
 }
 
 //FIXME: Yeah this wont work, (WebPage is not even loading!)
-while (gameOver == false) {
-    console.log('Loop activiated!')
-    PlayerX()
-    Ref()
-    if (gameOver == true){
-        break
-    }
-    PlayerO()
-    Ref()
-    if (gameOver == true){
-        break
-    }
-}
+// while (gameOver == false) {
+//     console.log('Loop activiated!')
+//     PlayerX()
+//     Ref()
+//     if (gameOver == true){
+//         break
+//     }
+//     PlayerO()
+//     Ref()
+//     if (gameOver == true){
+//         break
+//     }
+// }
