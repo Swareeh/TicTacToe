@@ -9,26 +9,62 @@ const box8 = document.getElementById('r3c2')
 const box9 = document.getElementById('r3c3')
 
 var symbol = 'X'
+var gameOver = false
+
+
+function EventListeners(symbol) {
+
+    box1.addEventListener('click', function () {
+        if (box1.innerHTML == 'X' || box1.innerHTML == 'O') {
+            console.log('Slot already filled!')
+        } else {
+            box1.innerHTML = symbol
+        }
+    })
+
+    box2.addEventListener('click', function () {
+        if (box2.innerHTML == 'X' || box2.innerHTML == 'O') {
+            console.log('Slot already filled!')
+
+        } else {
+            box2.innerHTML = symbol
+        }
+    })
+
+    box3.addEventListener('click', function () {
+        if (box3.innerHTML == 'X' || box3.innerHTML == 'O') {
+            console.log('Slot already filled!')
+        } else {
+            box3.innerHTML = symbol
+        }
+    })
+
+
+}
 
 function PlayerInputX() {
     var symbol = 'X'
+    EventListeners(symbol)
 }
 
 function PlayerInputO() {
     var symbol = 'O'
+    EventListeners(symbol)
+
 }
 
-// function Ref() {
-//     for (let i in ['X','O']) {
-//         if (box1.innerHTML == box2.innerHTML  == box3.innerHTML == i) {
-//             alert('Player',i,'Wins!')
-//         }
-//     }
-// }
+function Ref() {
+    for (let i in ['X','O']) {
+        if (box1.innerHTML == box2.innerHTML  == box3.innerHTML == i) {
+            alert('Player',i,'Wins!')
+        }
+    }
+}
 
 
-box1.addEventListener('click', function() {
-    box1.innerHTML = 'O'
-})
+for (let i = 0; i<=3;i++) {
+    PlayerInputX()
+    PlayerInputO()
+}
 
-// TODO: Build the Playerinput first before working on the Ref
+// TODO: Need to Entirely rebuild the logic
