@@ -1,9 +1,7 @@
 /* Importing Iansui */
 @import url('https://fonts.googleapis.com/css2?family=Iansui&display=swap');
 
-
 body {
-    /* background-color: rgb(50, 152, 50); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,14 +16,11 @@ body {
     padding: 10px;
 }
 
-
 .rows {
     height: 33.1%;
     display: flex;
     flex-direction: row;
 }
-
-
 
 .boxes{
     font-family: "Iansui", cursive;
@@ -37,7 +32,6 @@ body {
     font-size: 600%;
     border: 10px solid black;
     width: 33.1%;
-    /* margin: 5px; */
     cursor: pointer;
     transition: 0.25s;
 }
@@ -46,17 +40,16 @@ body {
     border-top: none;
 }
 
+#last_row .boxes{
+    border-bottom: none;
+}
+
 .first {
     border-left: none;
 }
 
 .third {
     border-right: none  ;
-}
-
-
-#last_row .boxes{
-    border-bottom: none;
 }
 
 .boxes:hover{
