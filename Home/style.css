@@ -1,0 +1,90 @@
+/* TODO: Need to make this reposnive*/
+/* TODO: Need to make the buttons functional*/
+
+/* Importing Boldonse */
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
+
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-2%);
+    }
+}
+
+@keyframes counter_floating {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(+2%);
+    }
+}
+
+
+* {
+    margin: 0;
+}
+
+body {
+    background-image: url('./Assets/bg.jpg');
+    overflow: hidden;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid blue;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    width: 100vh;
+    height: 50vh;
+    border-radius: 20px;
+    background-color: rgb(254, 242, 220);
+    animation: floating 1s ease-in-out forwards infinite alternate;
+
+}
+
+.btns {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    animation: counter_floating 1s ease-in-out forwards infinite alternate;
+}
+
+.btn_play,.btn_about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 10px;
+    height: 10vh;
+    width: 20vh;
+    text-align: center;
+    font-family: "Boldonse", system-ui;
+    font-size: 3vh;
+    cursor: pointer;
+}
+
+.btn_play:hover {
+    background-color: rgb(220, 220, 220);
+    color: #3Cb043;
+}
+
+.btn_about:hover {
+    background-color: rgb(220, 220, 220);
+    color: #3944BC;
+}
