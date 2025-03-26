@@ -1,4 +1,3 @@
-/* TODO: Need to make this reposnive*/
 /* TODO: Need to make the buttons functional*/
 
 /* Importing Boldonse */
@@ -64,7 +63,8 @@ body {
     animation: counter_floating 1s ease-in-out forwards infinite alternate;
 }
 
-.btn_play,.btn_about {
+.btn_play,
+.btn_about {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,4 +87,89 @@ body {
 .btn_about:hover {
     background-color: rgb(220, 220, 220);
     color: #3944BC;
+}
+
+/* Mobile Responsive Potrait */
+
+@media only screen and (orientation: portrait) and (min-width: 200px) and (max-width: 480px) {
+
+    .content {
+        height: 50vh;
+        width: 75vw;
+    }
+
+    h3 {
+        font-size: 0.5em;
+    }
+
+    .btns {
+        flex-direction: column;
+    }
+
+    .btn_play,
+    .btn_about {
+        height: 7vh;
+        width: 50vw;
+        font-size: 1em;
+    }
+
+    .btn_play:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .btn_about:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .btn_play:active {
+        background-color: rgb(220, 220, 220);
+        color: #3Cb043;
+    }
+
+    .btn_about:active {
+        background-color: rgb(220, 220, 220);
+        color: #3944BC;
+    }
+
+}
+
+/* Tablet Responsive Potrait (Including Larger Tablets)*/
+
+@media only screen and (orientation: portrait) and (min-width: 481px) and (max-width: 1279px) {
+    .content {
+        height: 50vh;
+        width: 75vw;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+
+
+    .btn_play,
+    .btn_about {
+        font-size: 1.5em;
+    }
+
+    .btn_play:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .btn_about:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .btn_play:active {
+        background-color: rgb(220, 220, 220);
+        color: #3Cb043;
+    }
+
+    .btn_about:active {
+        background-color: rgb(220, 220, 220);
+        color: #3944BC;
+    }
 }
