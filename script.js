@@ -229,6 +229,9 @@ function Ref() {
 //FIXME: Multiple Eventlistners are firing at the same time. (Check console)
 //FIXME: I think rewrting the entire script from scratch is easier than trying to fix this.
 
+// TODO: Would it be a good idea if you try to create a board (List) within the script instead of fetching all data inside the boxes every single time
+
+
 function gameLoop() {
     var currentPlayer = 'X'
     if (gameOver == true){
