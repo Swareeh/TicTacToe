@@ -7,7 +7,6 @@ body {
     align-items: center;
     height: 100svh;
     overflow: hidden;
-    /* background-color: black; */
     background-image: url('bg.jpg');
     color: #334a51;
 }
@@ -33,7 +32,7 @@ body {
     vertical-align: middle;
     line-height: 150px;
     font-size: 600%;
-    border: 10px solid #75b0d3;
+    border: 5px solid #75b0d3;
     width: 33.1%;
     cursor: pointer;
     transition: 0.25s;
@@ -56,6 +55,5 @@ body {
 }
 
 .boxes:hover {
-    /* background-color: rgb(190, 189, 189); */
     background-color: rgba(194, 234, 248, 0.37);
 }
