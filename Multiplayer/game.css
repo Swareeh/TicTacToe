@@ -48,6 +48,11 @@ body {
     cursor: pointer;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 #rematch_btn-popup:hover {
     background-color: rgb(220, 220, 220);
     color: #3Cb043;
