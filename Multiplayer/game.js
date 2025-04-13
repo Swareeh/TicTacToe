@@ -8,6 +8,11 @@ const box7 = document.getElementById('box7')
 const box8 = document.getElementById('box8')
 const box9 = document.getElementById('box9')
 
+// POPUP
+const result_popup = document.getElementById('result_popup')
+const popup_heading = document.getElementById('popup_heading')
+const popup_description = document.getElementById('popup_description')
+
 // let gameOver = false
 let PlayerTurn = 'X'
 
@@ -32,13 +37,20 @@ function Play(event) {
     const result = Ref()
 
     if (result == 'Game Over') {
-        alert('Game is over! Draw')
+        popup_heading.innerHTML = '🤝 It\'s a Draw!'
+        popup_description.innerHTML = 'No winner this time — it’s a perfect tie. Want to play again?'
+        result_popup.style.display = 'flex'
         return
     }
     else if (result == `X Wins`) {
-        alert(`Game is over! X Wins`)
+        popup_heading.innerHTML = '🎉 Player X Wins!'
+        popup_description.innerHTML = 'Congratulations! Player X has claimed victory. Ready for rematch?'
+        result_popup.style.display = 'flex'
+
     } else if (result == `O Wins`) {
-        alert(`Game is over! O Wins`)
+        result_popup.style.display = 'flex'
+        popup_heading.innerHTML = '🎉 Player O Wins!'
+        popup_description.innerHTML = 'Congratulations! Player O has claimed victory. Ready for rematch?'
     }
 
 }
