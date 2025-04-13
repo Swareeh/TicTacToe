@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Iansui&display=swap');
 /* Importing Boldonse */
 @import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
+/* Importing Special Gothic Expanded One Static */
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+/* Importing Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
     display: flex;
@@ -26,9 +30,15 @@ body {
     background-color: rgb(254, 242, 220);
 }
 
-#popup_heading {}
+#popup_heading {
+    font-family: "Special Gothic Expanded One", sans-serif;
+    color: black;
+}
 
-#popup_description {}
+#popup_description {
+    font-family: "Roboto", sans-serif;
+    font-size: medium;
+}
 
 .popup_btns {
     display: flex;
