@@ -38,18 +38,18 @@ function Play(event) {
 
     if (result == 'Game Over') {
         popup_heading.innerHTML = '🤝 It\'s a Draw!'
-        popup_description.innerHTML = 'No winner this time — it’s a perfect tie. Want to play again?'
+        popup_description.innerHTML = 'No winner this time — it\'s a perfect tie. Want to play again?'
         result_popup.style.display = 'flex'
         return
     }
     else if (result == `X Wins`) {
-        popup_heading.innerHTML = '🎉 Player X Wins!'
+        popup_heading.innerHTML = '🏆 Player X Wins!'
         popup_description.innerHTML = 'Congratulations! Player X has claimed victory. Ready for rematch?'
         result_popup.style.display = 'flex'
 
     } else if (result == `O Wins`) {
         result_popup.style.display = 'flex'
-        popup_heading.innerHTML = '🎉 Player O Wins!'
+        popup_heading.innerHTML = '🏆 Player O Wins!'
         popup_description.innerHTML = 'Congratulations! Player O has claimed victory. Ready for rematch?'
     }
 
