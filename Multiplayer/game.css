@@ -57,3 +57,34 @@ body {
 .boxes:hover {
     background-color: rgba(194, 234, 248, 0.37);
 }
+
+/* Mobile Responsive Potrait*/
+
+@media only screen and (orientation: portrait) and (min-width: 200px) and (max-width: 480px) {
+
+    .board {
+        width: 40vh;
+        height: 40vh;
+    }
+
+    .boxes {
+        font-size: 400%;
+    }
+
+}
+
+
+/* Tablet Responsive Potrait (Including Larger Tablets)*/
+
+@media only screen and (orientation: portrait) and (min-width: 481px) and (max-width: 1279px) {
+
+    .board {
+        width: 60vh;
+        height: 60vh;
+    }
+
+    .boxes {
+        font-size: 600%;
+    }
+
+}
