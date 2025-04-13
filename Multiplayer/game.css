@@ -1,5 +1,7 @@
 /* Importing Iansui */
 @import url('https://fonts.googleapis.com/css2?family=Iansui&display=swap');
+/* Importing Boldonse */
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
 
 body {
     display: flex;
@@ -9,6 +11,51 @@ body {
     overflow: hidden;
     background-image: url('bg.jpg');
     color: #334a51;
+}
+
+#result_popup {
+    text-align: center;
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vh;
+    height: 50vh;
+    border-radius: 20px;
+    background-color: rgb(254, 242, 220);
+}
+
+#popup_heading {}
+
+#popup_description {}
+
+.popup_btns {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+}
+
+.popup_btns button {
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 10px;
+    height: 10vh;
+    width: 20vh;
+    text-align: center;
+    font-family: "Boldonse", system-ui;
+    font-size: 2.5vh;
+    cursor: pointer;
+}
+
+#rematch_btn-popup:hover {
+    background-color: rgb(220, 220, 220);
+    color: #3Cb043;
+}
+
+#home_btn-popup:hover {
+    background-color: rgb(220, 220, 220);
+    color: #3944BC;
 }
 
 .board {
@@ -62,6 +109,46 @@ body {
 
 @media only screen and (orientation: portrait) and (min-width: 200px) and (max-width: 480px) {
 
+
+    #result_popup {
+        height: 50vh;
+        width: 80vw;
+    }
+
+    #popup_heading {
+        font-size: 30px;
+    }
+
+    #popup_description {
+        font-size: 13px;
+    }
+
+    .popup_btns {
+        flex-direction: column;
+    }
+
+    .popup_btns button {
+        height: 7vh;
+        width: 50vw;
+        font-size: 1em;
+    }
+
+    #rematch_btn-popup:hover,
+    #home_btn-popup:hover {
+        background-color: white;
+        color: black;
+    }
+
+    #rematch_btn-popup:active {
+        background-color: rgb(220, 220, 220);
+        color: #3Cb043;
+    }
+
+    #home_btn-popup:active {
+        background-color: rgb(220, 220, 220);
+        color: #3944BC;
+    }
+
     .board {
         width: 40vh;
         height: 40vh;
@@ -77,6 +164,38 @@ body {
 /* Tablet Responsive Potrait (Including Larger Tablets)*/
 
 @media only screen and (orientation: portrait) and (min-width: 481px) and (max-width: 1279px) {
+
+    #result_popup {
+        height: 50vh;
+        width: 75vw;
+    }
+
+    #popup_heading {
+        font-size: 3em;
+    }
+
+    #popup_description {}
+
+
+    .popup_btns button {
+        font-size: 1.5em;
+    }
+
+    #rematch_btn-popup:hover,
+    #home_btn-popup:hover {
+        background-color: white;
+        color: black;
+    }
+
+    #rematch_btn-popup:active {
+        background-color: rgb(220, 220, 220);
+        color: #3Cb043;
+    }
+
+    #home_btn-popup:active {
+        background-color: rgb(220, 220, 220);
+        color: #3944BC;
+    }
 
     .board {
         width: 60vh;
